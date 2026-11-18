@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 579 100" role="img" aria-label="UNFML"><rect x="0" y="46" width="34" height="54" fill="#5f9c82"/><rect x="46" y="0" width="34" height="100" fill="#18453b"/><defs><clipPath id="c"><rect x="-5" y="0" width="200" height="100"/></clipPath></defs>
+<g transform="translate(144 0)" clip-path="url(#c)"><path d="M11 0 V62 A27 27 0 0 0 65 62 V0" fill="none" stroke="#5f9c82" stroke-width="22" stroke-miterlimit="8"/></g>
+<g transform="translate(234 0)" clip-path="url(#c)"><path d="M11 100 V0 L65 100 V0" fill="none" stroke="#5f9c82" stroke-width="22" stroke-miterlimit="8"/></g>
+<g transform="translate(324 0)" clip-path="url(#c)"><path d="M11 100 V11 H62 M11 52 H54" fill="none" stroke="#18453b" stroke-width="22" stroke-miterlimit="8"/></g>
+<g transform="translate(397 0)" clip-path="url(#c)"><path d="M11 100 V0 L49 62 L87 0 V100" fill="none" stroke="#18453b" stroke-width="22" stroke-miterlimit="8"/></g>
+<g transform="translate(509 0)" clip-path="url(#c)"><path d="M11 0 V89 H62" fill="none" stroke="#18453b" stroke-width="22" stroke-miterlimit="8"/></g></svg>

@@ -198,3 +198,5 @@ footer p{max-width:70ch;margin:0 0 8px}
 /* ---- method page ---- */
 .method h2{margin-top:0}
 .method a{color:var(--green);font-weight:600}
+
+.nav .brand{display:flex;align-items:center;gap:10px}.nav .brand img{display:block;height:28px;width:auto}.nav .brand span{font-weight:900;font-size:19px;color:var(--green);letter-spacing:.02em}@media(max-width:700px){.nav .brand img{height:24px}}
