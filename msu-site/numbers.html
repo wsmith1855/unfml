@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Numbers: MSU Raises</title>
+<meta name="description" content="Who is on the list of MSU executives, deans, chairs and faculty, and what a 3.5% raise costs compared with 1.9%.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Numbers: MSU Raises">
+<meta property="og:description" content="Who is on the list of MSU executives, deans, chairs and faculty, and what a 3.5% raise costs compared with 1.9%.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Numbers: MSU Raises">
+<meta name="twitter:description" content="Who is on the list of MSU executives, deans, chairs and faculty, and what a 3.5% raise costs compared with 1.9%.">
+<link rel="canonical" href="https://msu.unfml.com/numbers.html">
+<meta property="og:url" content="https://msu.unfml.com/numbers.html">
+<meta property="og:site_name" content="1.9% vs 3.5%">
+<meta property="og:image" content="https://msu.unfml.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="1.9% vs 3.5%: twice the people, about half the raise money">
+<meta name="twitter:image" content="https://msu.unfml.com/assets/og-image.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="banner"><div class="wrap">
+  <strong>Independent project.</strong>
+  <span>Not an official publication of Michigan State University.</span>
+</div></div>
+
+<nav class="nav" aria-label="Site"><div class="wrap">
+    <a class="brand" href="index.html">1.9% vs 3.5%</a>
+    <a class="l" href="index.html">Home</a>
+    <a class="l" href="numbers.html" aria-current="page">The numbers</a>
+    <a class="l" href="salaries.html">Salary list</a>
+    <a class="l" href="voices.html">Speak up</a>
+    <a class="l" href="method.html">How it was compiled</a>
+  </div></nav>
+
+<header class="pagehead"><div class="wrap">
+  <h1>The numbers</h1>
+  <p>Who is on the list, what a 3.5% raise costs, and what that money could fund.</p>
+</div></header>
+<section aria-labelledby="gH">
+  <div class="wrap">
+    <h2 id="gH">Who is on the list</h2>
+    <p class="lede">Every executive, dean, chair and faculty member at Michigan State with reported 2025 pay. Those paid $200,000 or more are named on the <a href="salaries.html">salary list</a>. Lower pay bands are counted but not named. Chairs and deans are shown separately because they hold both faculty and administrative roles.</p>
+    <div class="groups" id="groups"></div>
+  </div>
+</section>
+
+<section class="calc" id="calc" aria-labelledby="calcH">
+  <div class="wrap">
+    <h2 id="calcH">What the raise costs, and what it could fund</h2>
+    <p class="lede">The raise starts at 3.5%. Change it, or enter the salary of a typical employee in your unit, and the totals update as you type.</p>
+    <div class="calc-grid">
+      <div class="fields">
+        <div>
+          <label for="pct">Raise percentage</label>
+          <div class="inputrow"><input id="pct" type="number" min="0" max="20" step="0.1" value="3.5" inputmode="decimal"><span>%</span></div>
+        </div>
+        <div>
+          <label for="sal">Salary of a typical employee</label>
+          <div class="inputrow"><span>$</span><input id="sal" type="number" min="1" step="1000" value="50000" inputmode="numeric"></div>
+          <p class="hint">$50,000 is a placeholder for illustration. Enter the real figure for your unit.</p>
+        </div>
+      </div>
+      <div class="results" aria-live="polite">
+        <div class="result"><b id="rPool">$2.8 million</b><span id="rPoolT"></span></div>
+        <div class="result alt"><b id="rFull">55</b><span id="rFullT"></span></div>
+        <div class="result alt"><b id="rRaises">1,594</b><span id="rRaisesT"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="share" role="group" aria-label="Share this page"><span class="lbl">Share</span><a class="shx" href="https://x.com/intent/post" target="_blank" rel="noopener noreferrer">Share on X</a><a class="shfb" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Share on Facebook</a></div>
+    <p>Independent project. Not affiliated with, endorsed by, or published by Michigan State University or its Board of Trustees.</p>
+    <p>Green and white are used as a nod to school colors only. Salary data comes from public records.</p>
+  </div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/share.js"></script>
+<script src="assets/numbers.js"></script>
+</body>
+</html>
