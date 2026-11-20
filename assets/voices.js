@@ -63,7 +63,9 @@
           if(window.hcaptcha){ try{ window.hcaptcha.reset(); }catch(_){} }
           say("Thank you. Your comment was sent for review. It may take a few days to appear, and not every comment is posted.", "ok");
         } else {
-          say("Something went wrong and your comment was not sent. Please try again in a moment.", "err");
+          try{ console.warn("Comment form response:", j); }catch(_){}
+          say("Something went wrong and your comment was not sent. Please try again in a moment." + (j && j.message ? " (" + String(j.message).slice(0,160) + ")" : ""), "err");
+          if(window.hcaptcha){ try{ window.hcaptcha.reset(); }catch(_){} }
         }
       })
       .catch(function(){ say("Your comment could not be sent. Check your connection and try again.", "err"); })
