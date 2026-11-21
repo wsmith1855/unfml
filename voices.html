@@ -58,17 +58,14 @@
             <li>Do not share confidential university information.</li>
             <li>No harassment, threats or hate.</li>
             <li>Comments are held for review. Some will be shortened or edited for clarity and privacy, and not every comment will be posted.</li>
-            <li>This site does not ask for your name or email. The form service and bot check handle your connection data to deliver your message and block bots, so avoid details that could identify you.</li>
+            <li>This site does not ask for your name or email. Cloudflare, which runs the comment form and bot check, handles your connection data to deliver your message and block bots, so avoid details that could identify you.</li>
           </ul>
         </div>
         <button class="btn" id="openForm" type="button" aria-expanded="false" aria-controls="formWrap">Write a comment</button>
-        <p class="hint2">Nothing loads from outside this site until you click. Opening the form loads a bot check from a third party (hCaptcha).</p>
+        <p class="hint2">This page loads the published comments from the site's comment server (Cloudflare). Opening the form also loads a bot check from Cloudflare (Turnstile).</p>
         <div id="formWrap" hidden>
-          <form class="cform" id="cform" novalidate>
-            <input type="hidden" name="access_key" value="2124b2a6-1649-4857-8e13-0dcab4c07805">
-            <input type="hidden" name="subject" value="New comment for review">
-            <input type="hidden" name="from_name" value="Comment form">
-            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+          <form class="cform" id="cform" novalidate data-api="https://YOUR-WORKER.workers.dev" data-sitekey="YOUR_TURNSTILE_SITEKEY">
+            <div class="hp" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
             <div class="field">
               <label for="msg">Your comment</label>
               <textarea id="msg" name="message" maxlength="1000" required aria-describedby="msgcount"></textarea>
@@ -86,7 +83,7 @@
                 <option>Other</option>
               </select>
             </div>
-            <div class="captcha"><div class="h-captcha" data-captcha="true"></div></div>
+            <div class="captcha"><div class="cf-turnstile" id="ts"></div></div>
             <button class="btn" id="sendBtn" type="submit">Send for review</button>
             <p class="cstatus" id="cstatus" role="status" aria-live="polite"></p>
           </form>
